@@ -82,6 +82,6 @@ model = tf.keras.Sequential([
 
 model.compile('adam', 'categorical_crossentropy')
 
-model.fit(predictors, label, epochs=3)
+model.fit(predictors, label, epochs=3, batch_size=64)
 
 # %%
